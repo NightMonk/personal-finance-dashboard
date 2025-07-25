@@ -75,4 +75,4 @@ st.plotly_chart(px.pie(cat_sum, names='Spending Category', values='Amount (GBP)'
 st.subheader("📥 Top Income Sources")
 income = filtered[filtered['Amount (GBP)'] > 0]
 income_sources = income.groupby('Counter Party')['Amount (GBP)'].sum().sort_values(ascending=False).reset_index().head(10)
-st.plotly_chart(px.bar(income_sources)), x=Co
+st.plotly_chart(px.bar(income_sources)), x:=Co
